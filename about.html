@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            color: blueviolet;
+        }
+
+        /* Remove * color because it conflicts with IDs */
+        /* Instead, set a default color on body */
+        body {
+            color: rgb(50, 156, 170);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .paragraph {
+            background-color: chocolate;
+        }
+
+        /* Specific ID colors override body color */
+        #selva {
+            color: rgb(0, 17, 255);
+        }
+
+        #mith {
+            color: rgb(226, 29, 29);
+        }
+
+        #RK {
+            color: rgb(51, 75, 67);
+        }
+
+        /* Simplify text class */
+        .text {
+            font-weight: 500;
+            font-size: x-large;
+            letter-spacing: 2px; /* reduced from 10px */
+            text-transform: uppercase;
+            text-align: center; /* center text */
+            margin: 1em 0; /* add some spacing */
+        }
+
+        h1 {
+            padding: 10px;
+            border: 10px double rgb(62, 53, 179);
+            margin: 10px 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <p class="text">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt aliquam voluptatibus, natus quis quae facilis
+        provident ut soluta debitis doloribus molestias ipsa eveniet, a, distinctio neque rem officiis dolorum nesciunt
+        error! Consequatur neque ipsam explicabo obcaecati! Molestias, consequatur tempore odit debitis iusto
+        accusantium repudiandae, commodi, ea autem voluptatum laborum corrupti magni libero esse! Enim non omnis alias
+        saepe excepturi ratione in, reiciendis quos sequi ut explicabo eligendi inventore labore, dolorum est dolore
+        voluptatibus modi nulla, aliquam dignissimos vel maxime? Quaerat accusamus molestiae assumenda placeat,
+        <br />
+        <hr />
+        temporibus dolorem qui tempora. Fugiat, quasi doloribus. Repellendus impedit quisquam officia illum maxime
+        corrupti dolores laudantium?
+    </p>
+    <a href="https://openai.com/index/chatgpt/">chatgpt</a>
+    <h1>box model</h1>
+    <img src="./assets/food.png" alt="Food image" />
+    <ul>
+        <li id="selva">selva</li>
+        <li id="mith">mith</li>
+        <li id="RK">RK</li>
+    </ul>
+    <ol>
+        <li>778090</li>
+        <li>selva</li>
+    </ol>
+</body>
+</html>
