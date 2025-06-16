@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Student  Form</title>
+<style>
+body {
+font-family: 'Segoe UI', sans-serif;
+background: linear-gradient(to right, #74ebd5, #ACB6E5);
+margin: 0;
+padding: 0;
+}
+
+.container {
+width: 90%;
+max-width: 500px;
+background: #fff;
+margin: 50px auto;
+padding: 30px;
+border-radius: 10px;
+box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+h2 {
+text-align: center;
+color: #333;
+margin-bottom: 25px;
+}
+
+label {
+display: block;
+margin-bottom: 5px;
+color: #555;
+font-weight: bold;
+}
+
+input, select {
+width: 100%;
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 5px;
+transition: 0.3s;
+}
+
+input:focus, select:focus {
+border-color: #74ebd5;
+outline: none;
+background-color: #f9f9f9;
+}
+
+.gender {
+display: flex;
+gap: 15px;
+margin-bottom: 15px;
+}
+
+.gender label {
+font-weight: normal;
+}
+
+button {
+width: 100%;
+padding: 10px;
+background: #74ebd5;
+border: none;
+color: white;
+font-size: 16px;
+border-radius: 5px;
+cursor: pointer;
+transition: background 0.3s ease;
+}
+
+button:hover {
+background: #58c3b2;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+<h2>Student Registration Form</h2>
+<form>
+<label for="name">Full Name</label>
+<input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+<label for="email">Email Address</label>
+<input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+<label for="age">Age</label>
+<input type="number" id="age" name="age" required>
+
+<label>Gender</label>
+<div class="gender">
+<label><input type="radio" name="gender" value="Male" required> Male</label>
+<label><input type="radio" name="gender" value="Female"> Female</label>
+<label><input type="radio" name="gender" value="Other"> Other</label>
+</div>
+
+<button type="submit">Register</button>
+</form>
+</div>
+
+</body>
+</html>

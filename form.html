@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      form {
+        background-color: rgba(255, 255, 255, 0.15);
+        padding: 30px 40px;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        width: 320px;
+        text-align: center;
+      }
+      
+</head>
+<body>
+    <body>
+    <form id="form">
+        <h1>Login</h1>
+        <label for="email">Email:</label>
+        <input id="email" type="text" placeholder="Enter the email" required>
+        <br><br>
+        <label for="password">Password:</label>
+        <input id="password" type="password" placeholder="Enter the password" required maxlength="8">
+        <br><br>
+        
+        <button type="submit">submit</button>
+        <h1 id="result1"></h1>
+        <h1 id="result2"></h1>
+    </form>
+    <script>
+        document.getElementById("form").addEventListener("submit",function(e){
+            e.preventDefault();
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            console.log(email,password)
+            document.getElementById("result1").textContent=email
+            document.getElementById("result2").textContent=password
+        })
+    </script>
+</body>
+</html>

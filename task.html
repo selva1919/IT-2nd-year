@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #c9470b, #b4660d);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background-color: #ffffffcc;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #ca7397;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            text-align: left;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #b8d3e6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #3498db;
+        }
+
+        #result1, #result2 {
+            font-size: 1rem;
+            color: #34495e;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="form">
+        <h1>Login</h1>
+        <label for="email">Email:</label>
+        <input id="email" type="text" placeholder="Enter the email" required>
+        <br><br>
+        <label for="password">Password:</label>
+        <input id="password" type="password" placeholder="Enter the password" required maxlength="8">
+        <br><br>
+
+        <button type="submit">Submit</button>
+        <h1 id="result1"></h1>
+        <h1 id="result2"></h1>
+    </form>
+
+    <script>
+        document.getElementById("form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            console.log(email, password)
+            document.getElementById("result1").textContent = "Email: " + email;
+            document.getElementById("result2").textContent = "Password: " + password;
+        })
+    </script>
+</body>
+</html>
